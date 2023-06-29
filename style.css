@@ -16,7 +16,7 @@ body {
 
 .header {
     display: flex;
-    position: sticky;
+    position: relative;
     top: 0;
     justify-content: space-between;
     width: 100%;
@@ -190,7 +190,8 @@ body {
 @media (max-width:650px){
  
 .arrow{
-    display: none;
+    display: block;
+    font-size: 19px;
 }
 
 .maindetail{
