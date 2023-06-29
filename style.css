@@ -39,7 +39,7 @@ body {
 
 .menu{
     font-size: 2.5rem;
-    padding-right: 45px;
+    margin-right: 25px;
     display: none;
 }
 
@@ -98,6 +98,7 @@ body {
     }
     .logo{
         display: block;
+        margin-left: 30px;
     }
     .signbtn {
         background-color: transparent;
@@ -124,8 +125,7 @@ body {
 
 .maindetail {
     width: 50%;
-    padding-left: 50px;
-    margin: auto;
+   padding-left: 50px;
 }
 
 .maindetailheader {
@@ -175,7 +175,7 @@ body {
 }
 
 .mainimginner {
-    width:clamp(100px,90%,1000px);
+    width:clamp(100px,80%,1000px);
     height: 500px;
 }
 
@@ -187,20 +187,36 @@ body {
 }
 
 @media (max-width:850px){
-  .maindetail,.mainimg{
+ 
+.arrow{
+    display: none;
+}
+
+.maindetail{
+    
+     width: 100%;
+     padding-left: 30px;
+    align-items:center;
+    text-align: left;
+    margin-bottom: 300px;
+}
+
+.mainimg{
     width: 100%;
   }
 
-  .main {
-    height: calc(100vh - 100px);
-}
-
 .maindetailheader{
-    font-size: 7vw;
+    font-size: 5vw;
 }
 
 .maindetailexplain{
-    font-size: 4.5vw;
+    font-size: 3.5vw;
+}
+
+.mybutton{
+    padding: 15px 25px;
+    font-size: 14px;
+}
 }
 
 /* End of main */
@@ -209,7 +225,7 @@ body {
 
 .secondpage{
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(110vh - 100px);
     background-color:#26202B;
     color: white;
 }
