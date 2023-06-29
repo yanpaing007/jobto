@@ -189,7 +189,7 @@ body {
 @media (max-width:850px){
  
 .arrow{
-    display: none;
+    display: block;
 }
 
 .maindetail{
@@ -198,12 +198,12 @@ body {
      padding-left: 30px;
     align-items:center;
     text-align: left;
-    margin-bottom: 3600px;
+    height: 400px;
 }
 
 .mainimg{
     width: 100%;
-    margin-top: -50px;
+    height: 400px;
   }
 
 .maindetailheader{
