@@ -82,6 +82,7 @@ body {
         background-color: #5F7ADB;
         border-radius: 5px;
         animation: nav 0.4s ease-in-out;
+        overflow: hidden;
     }
 
     @keyframes nav {
@@ -186,7 +187,7 @@ body {
     font-size: 2.5rem;
 }
 
-@media (max-width:850px){
+@media (max-width:650px){
  
 .arrow{
     display: none;
@@ -195,7 +196,6 @@ body {
 .maindetail{
     
      width: 100%;
-     padding-left: 30px;
     align-items:center;
     text-align: left;
     height: 400px;
@@ -207,16 +207,16 @@ body {
   }
 
 .maindetailheader{
-    font-size: 5vw;
+    font-size: 5.4vw;
 }
 
 .maindetailexplain{
-    font-size: 3.5vw;
+    font-size: 3.8vw;
 }
 
 .mybutton{
     padding: 15px 25px;
-    font-size: 14px;
+    font-size: 13px;
 }
 }
 
