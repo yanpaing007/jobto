@@ -189,7 +189,7 @@ body {
 @media (max-width:850px){
  
 .arrow{
-    display: block;
+    display: none;
 }
 
 .maindetail{
