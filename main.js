@@ -6,3 +6,13 @@ function showme(){
         menu.style.display="none";
     }
 }
+
+/*
+window.onload=function(){
+    setInterval(function() {
+    
+        window.location.href="#second";
+    
+}, 100);
+}
+*/

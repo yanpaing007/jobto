@@ -47,6 +47,7 @@ body {
 .navbar ul {
     display: flex;
     padding-right: 30px;
+    
 }
 
 .navbar ul li {
@@ -82,7 +83,6 @@ body {
         background-color: #5F7ADB;
         border-radius: 5px;
         animation: nav 0.4s ease-in-out;
-        overflow: hidden;
     }
 
     @keyframes nav {
@@ -121,6 +121,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: row-reverse;
     align-items: center;
 }
 
@@ -130,14 +131,15 @@ body {
 }
 
 .maindetailheader {
-    font-size: 4vw;
+    font-size: 3.8vw;
     font-weight: bolder;
 }
 
 .maindetailexplain {
-    font-size: 2vw;
-    font-weight: 300;
+    font-size: 1.8vw;
+    font-weight: 100;
     padding: 10px 0;
+    color: rgb(215, 201, 201);
 }
 
 .maindetailbtn {
@@ -188,10 +190,13 @@ body {
 }
 
 @media (max-width:650px){
+
+   
  
 .arrow{
     display: block;
-    font-size: 19px;
+    font-size: 22px;
+    margin-bottom: -15px;
 }
 
 .maindetail{
@@ -199,12 +204,12 @@ body {
      width: 100%;
     align-items:center;
     text-align: left;
-    height: 400px;
+    height: 450px;
 }
 
 .mainimg{
     width: 100%;
-    height: 400px;
+    height: 350px;
   }
 
 .maindetailheader{
@@ -230,4 +235,79 @@ body {
     height: calc(110vh - 100px);
     background-color:#26202B;
     color: white;
+    padding: 10px;
+}
+
+.secondpheader{
+  padding:15px 25px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  transform: skewX(-9deg);
+  background-color: #5F7ADB;
+  display: inline-block;
+}
+
+.secondpheader2{
+    padding:15px 25px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  transform: skewX(-9deg);
+  background-color: #5F7ADB;
+  display: inline-block;
+  margin-top: 80px;
+}
+    
+
+.explainbox{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    padding-top: 30px;
+  
+    
+}
+.boximg{
+width: 70px;
+padding-top: 40px;
+}
+
+.explainbox .box{
+height: auto;
+    width: clamp(0,90%,600px);
+    background-color: #2E3239;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding:60px 10px;
+   
+}
+
+.numberbox{
+    position: absolute;
+    top:5px;
+    left:5px;
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: rgb(104, 92, 107);
+    border-radius: 50%;
+
+}
+
+.boxheader{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 0.2rem;
+}
+
+@media (max-width: 650px) {
+    .explainbox{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: space-between;
+    }
 }
