@@ -7,7 +7,7 @@ function showme(){
     }
 }
 
-
+/*
 window.onload=function(){
     setInterval(function() {
     
@@ -15,4 +15,4 @@ window.onload=function(){
     
 }, 100);
 }
-
+*/
