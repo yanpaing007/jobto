@@ -4,11 +4,12 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
-    color:white;
+    
 }
 
 body {
     background-color:#26202B;
+    color: white;
 }
 
 
@@ -337,4 +338,127 @@ footer{
 }
 
 /* End of second page */
+
+
+/* ..................................................... */
+
+/* Register.html */
+
+.regismain{
+    width: 100%;
+    height: calc(100vh - 100px);
+  
+}
+.regisform{
+    width:clamp(400px,80%,1300px);
+    border-radius: 10px;
+    height: 600px;
+    position: absolute;
+    background-color: #2E3239;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    flex: 1 1;
+}
+
+.regisimg{
+    background-image: url("img/pick.jpeg");
+    border-radius: 10px;
+    width:50%;
+    height: 600px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.regisdetail{
+    width: 50%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.regisdetailheader{
+    font-size: 40px;
+    letter-spacing: .2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    position: absolute;
+    top: 33px;
+    left: 7px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    color: #ffffff;
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
+    top: -4px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.form-group input {
+    width: 300px;
+    padding: 10px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid #999;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #5F7ADB;
+    outline: none;
+    color:white;
+
+}
+
+.submitbtn{
+    padding:18px 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: #5F7ADB;
+    color:white;
+    cursor: pointer;
+    outline: none;
+    border:none;
+}
+
+.regisdetail p{
+    padding: 30px 0px;
+    margin-right: 30px;
+}
+
+.regisdetail p a{
+    color:rgb(111, 200, 39);
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    .regisimg{
+        display: none;
+    }
+
+    .regisform{
+        margin-top: 50px;
+    }
+
+    .regisdetail{
+        width: 100%;
+    }
+}
 
